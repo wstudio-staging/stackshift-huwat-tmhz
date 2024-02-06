@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+  IMPORTANT: ONLY ADD STYLES HERE IF THEY WILL BE USED GLOBALLY (IN ALL PAGES). 
+  IF NOT, THEN ADD THEM BY CSS MODULES (e.g. Products.module.css - contains all styling for product pages only).
+**/
+
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ECWID COMPONENT CUSTOM STYLING */
+/* TODO: MIGRATE THIS TO CSS MODULE */
+/* .cart-icon {
+  @apply relative before:content-[attr(data-count)] before:absolute before:flex before:items-center before:justify-center before:bg-webriq-darkblue before:rounded-full before:h-6 before:w-6 before:-top-3 before:-right-3 before:text-white;
+} */
+html#ecwid_html body#ecwid_body .cart-icon {
+  position: relative;
+}
+html#ecwid_html body#ecwid_body .cart-icon .cart-link {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+html#ecwid_html body#ecwid_body .cart-icon .ec-minicart__icon svg {
+  width: 32px;
+  height: 32px;
+}
+html#ecwid_html body#ecwid_body .ec-minicart__icon .icon-default path[stroke] {
+  stroke-width: 1;
+}
+html#ecwid_html body#ecwid_body .ec-minicart--m .ec-minicart__counter::after {
+  background-color: #007aff !important;
+}
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-breadcrumbs {
+  display: none !important;
+}
+
+/* hide navigation sidebar when screen is less than screen size */
+@media (min-width: 1280px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1560px) {
+  .main-nav {
+    left: 50%;
+    align-items: center;
+    width: auto;
+  }
+}
+@media (max-width: 1559px) {
+  .main-nav {
+    left: 40%;
+    align-items: center;
+  }
+}
+
+/* PRODUCT INFO SWIPER CUSTOM STYLE */
+/* TODO: MIGRATE THIS TO CSS MODULE */
+.swiper-slide-thumb-active img {
+  border: 1px solid #0045d8 !important;
+}
+
+.product-images-thumbs-swiper.swiper-container .swiper-slide {
+  height: 0 !important;
+  padding-bottom: 25%;
+}
+
+.product-images-thumbs-swiper.swiper-container .swiper-slide>div {
+  height: 0 !important;
+  padding-bottom: 100%;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5 !important;
+}
+
+.product-images-swiper.swiper-container {
+  height: calc(auto + 1px);
+  /* position: relative; */
+}
+
+.product-images-swiper.swiper-container {
+  padding-top: 10px;
+}
+
+.product-images-swiper.swiper-container .swiper-wrapper {
+  position: relative;
+  height: 0 !important;
+  padding-bottom: 100%;
+}
+
+.product-images-swiper.swiper-container .swiper-slide {
+  height: 0 !important;
+  padding-bottom: 100%;
+}
+
+.product-images-swiper.swiper-container .swiper-slide>div {
+  height: 0 !important;
+  padding-bottom: 100%;
+}
+
+.toastContainer {
+  z-index: 1;
+}
+
+/** Sanity Studio embed **/
+
+/* Cosmetic: Remove border-right of tools menu */
+div[data-ui="Navbar"] > div > div:first-child > div:last-child {
+  border-right: 0 !important;
+}
+
+/* Hide every thing in the right navbar */
+div[data-ui="Navbar"] > div > div:last-child {
+  display: none !important;
+}
+
+/*  Fallback: Hide manage project from menu */
+a[data-ui="MenuItem"][href^="https://sanity.io/manage/project"],
+a[data-ui="MenuItem"][href^="https://sanity.io/manage/project"] + hr
+{
+  display: none !important;
+}
+
+/* Fallback: Hide user and logout popover from menu */
+button#presence-menu,
+button#login-status-menu {
+  display: none !important;
+}
+
+/* Desktop: when using field groups, we hide the first tab */
+[data-ui="TabList"][data-testid="field-group-tabs"] > div:first-child {
+  display: none;
+}
+
+/* Mobile: when using field groups, hide the first option */
+select[data-testid="field-group-select"] > option:first-child {
+  display: none;
+}
+
+/* Duplicate page settings modal */
+.showBtn:hover .hide {
+  display: block;
+}
+
+/** Help Guide **/
+ul[aria-label="List of Content"] {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column;
+}
+
+ul[aria-label="List of Content"] > li {
+  transform: none !important;
+  flex: none !important;
+  position: relative !important;
+  left: initial !important;
+  top: initial !important;
+}
+
+ul[aria-label="List of Content"] > li:last-child {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+ul[aria-label="List of Content"] > li:last-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid var(--card-border-color);
+}
+
+/* End */

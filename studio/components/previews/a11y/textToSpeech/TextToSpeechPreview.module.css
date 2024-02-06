@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 1rem;
+}
+
+/* .selectionWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @nest & div[class*="DefaultSelect_root"] {
+    flex: 1;
+    margin-right: 0.5em;
+  }
+} */
+
+.transcriptHeading {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.transcriptBody {
+  margin-top: 5px;
+  font-size: medium;
+}

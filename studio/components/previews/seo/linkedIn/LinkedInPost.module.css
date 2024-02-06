@@ -1,0 +1,67 @@
+.seoItem {
+  margin: 15px;
+  margin-top: 50px;
+}
+
+.linkedinWrapper {
+  background-color: #394350;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.linkedinImageContainer {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.linkedinCardImage {
+  max-height: 256px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.linkedinCardContent {
+  padding: 10px 12px;
+  color: #394350;
+}
+
+.linkedinCardUrl {
+  color: #9ca3ac;
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.linkedinCardTitle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.linkedinCardTitle a {
+  color: #dfe4ea;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 3px 0 0;
+  padding-top: 2px;
+  text-decoration: none;
+}
+
+.linkedinCardDescription {
+  color: #606770;
+  font-size: 14px;
+  line-height: 20px;
+  max-height: 80px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}

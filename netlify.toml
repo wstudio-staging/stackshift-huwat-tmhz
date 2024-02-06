@@ -1,0 +1,3 @@
+# Netlify Next.js plugin
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
