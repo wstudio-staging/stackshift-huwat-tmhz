@@ -10,7 +10,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "chromatic": "npx chromatic --project-token=chpt_68d919151b3e677"
+    "chromatic": "npx chromatic --project-token=11111"
   },
   "dependencies": {
     "@portabletext/react": "^3.0.9",
