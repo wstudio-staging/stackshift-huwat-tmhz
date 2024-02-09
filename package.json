@@ -10,8 +10,8 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "update:tag": "echo 'Enter custom tag: 👇 (eg: latest, next, your-own-tag)' && read ctag && yarn add @webriq-pagebuilder/sanity-plugin-input-component-gpt3@$ctag @webriq-pagebuilder/sanity-plugin-input-component-variants@$ctag @webriq-pagebuilder/sanity-plugin-schema-blog@$ctag @webriq-pagebuilder/sanity-plugin-schema-commerce@$ctag @webriq-pagebuilder/sanity-plugin-schema-default@$ctag @webriq-pagebuilder/sanity-plugin-webriq-blog@$ctag @webriq-pagebuilder/sanity-plugin-webriq-components@$ctag @webriq-pagebuilder/sanity-plugin-webriq-forms@$ctag @webriq-pagebuilder/sanity-plugin-webriq-payments@$ctag @webriq-pagebuilder/sanity-plugin-desk-studio-version@$ctag @webriq-pagebuilder/sanity-plugin-inspector-inline-edit@$ctag",
-    "chromatic": "npx chromatic --project-token=11111"
+    "chromatic": "npx chromatic --project-token=2222",
+    "update:tag": "sh update-tag.sh"
   },
   "dependencies": {
     "@portabletext/react": "^3.0.9",
