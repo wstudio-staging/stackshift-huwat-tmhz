@@ -10,7 +10,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "chromatic": "npx chromatic --project-token=2222",
+    "chromatic": "npx chromatic --project-token=chpt_7a7a35a80ddf68b",
     "update:tag": "sh update-tag.sh"
   },
   "dependencies": {
